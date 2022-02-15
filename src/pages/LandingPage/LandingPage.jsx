@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import { PageHeader } from '../../components/PageHeader/PageHeader';
 
 export class LandingPage extends Component {
   render() {
     return (
-      <div>This is my landing page</div>
+      <div className='landing-page'>
+          <PageHeader />
+      </div>
     )
   }
 }
