@@ -1,47 +1,71 @@
-
 .header {
-    &__button {
-        position: relative;
+    &__container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 4rem;
     }
 
-    &__button-burger {
-        width: 50px;
-        height: 6px;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255,101,47,.2);
-        transition: all .5s ease-in-out;
-
-        &::before, &::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 6px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(255,101,47,.2);
-            transition: all .5s ease-in-out;
-        }
-
-        &::before {
-            transform: translateY(-16px);
-        }
-
-        &::after {
-            transform: translateY(16px);
-        }
+    &__button-area {
+        display:grid;
+        place-items:start end;
+        margin:0;
+        padding:0;
     }
 
-// animation 
-    &__button-open {
-        transform: rotate(45deg) translate(35px, -35px);
+    &__button-label {
+        display:flex;
+         flex-direction:column;
+         width:70px;
+         cursor:pointer;
     }
 
+    &__button-bar {
+        background: blue;
+        border-radius:10px;
+        height:7px;
+        margin: 7px 0;
+        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        &--1 {
+            width:50%;
+        }
+
+        &--2 {
+            width:100%;
+        }
+
+        &--3 {
+            width:75%;
+        }
+    }
 }
+  
+  
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  
+  input[type="checkbox"]:checked ~ .header__button-bar--1{
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(8px,0px)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ .header__button-bar--2{
+    
+    transform-origin:top;
+    transform:rotatez(-45deg)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ .header__button-bar--3{
+    
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(30px,-11px) rotatez(45deg);
+  
+  }
+  
