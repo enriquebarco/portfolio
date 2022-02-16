@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Logo from "../../assets/icons/memoji.jpeg";
+import Github from "../../assets/icons/github.png";
+import Linkedin from "../../assets/icons/linkedin.png";
+import Instagram from "../../assets/icons/instagram.png";
+
+
 import "./PageHeader.scss";
 
 
@@ -31,16 +36,16 @@ export class PageHeader extends Component {
         <div className="header__hidden-CTA">
           <div className="header__hidden-container">
             <a href="https://github.com/enriquebarco" className="header__media-links">
-              <img src="" alt="github icon" className="header__media-icons" />
+              <img src={Github} alt="github icon" className="header__media-icons" />
             </a>
             <a href="https://www.linkedin.com/in/enriquebarco/" className="header__media-links">
-              <img src="" alt="linkedin icon" className="header__media-icons" />
+              <img src={Linkedin} alt="linkedin icon" className="header__media-icons" />
             </a>
             <a href="https://www.instagram.com/kikebarco/" className="header__media-links">
-              <img src="" alt="instagram icon" className="header__media-icons" />
+              <img src={Instagram} alt="instagram icon" className="header__media-icons" />
             </a>
           </div>
-          <button>Get in Touch</button>
+          <button className="header__button">Get in Touch</button>
         </div> : ""}
     </header>
     )

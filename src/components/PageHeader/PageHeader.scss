@@ -1,4 +1,5 @@
 @use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
 
 .header {
     &__container {
@@ -63,5 +64,41 @@
       transform-origin:bottom;
       width:50%;
       transform: translate(16px,-7px) rotatez(45deg);
+    }
+
+    &__hidden-CTA {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        
+    }
+
+    &__hidden-container {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &__media-icons {
+        width: 3rem;
+    }
+
+    &__button {
+        background-image: linear-gradient(-180deg, $color-primary, $color-primary-faded, $color-primary);
+        border: solid 1px $color-primary;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+        cursor: pointer;
+        outline: 0;
+        overflow: hidden;
+        border-radius: 6%;
+        border: 0;
+        transition: box-shadow .2s;
+        color: white;
+        width: 40%;
+        padding: .5rem  1rem;
+        align-self: center;
+        font-family: "Montserrat";
+        margin-bottom: 2rem;
     }
 }
