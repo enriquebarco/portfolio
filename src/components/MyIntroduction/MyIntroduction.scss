@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+
+.introduction {
+    background-color: $color-primary;
+    text-align: center;
+    color: white;
+
+    &__title {
+        font-size: 1.5rem;
+    }
+}
