@@ -11,4 +11,26 @@
         width: 100%;
         border-radius: 0.5rem;
     }
+
+    &__name {
+        text-align: center;
+        font-variation-settings: "wght" 700;
+        margin-bottom: 0rem;
+    }
+
+    &__description {
+        text-align: center;
+        padding: 0 1rem;
+        line-height: 1.2rem;
+    }
+
+    &__stack-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__stack-icon {
+        width: 15%;
+    }
 }

@@ -12,6 +12,8 @@ export default function ProjectsList() {
                 name={project.name}
                 description={project.description}
                 image={project.image}
+                stack={project.stack}
+                link={project.link}
             />
         })}
     </section>
