@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "../../assets/images/kitesurf2.jpeg";
-import Decoration from "../../assets/images/computer.png"
+import Decoration from "../../assets/images/desksvg.svg";
 import "./LandingHero.scss";
 
 export default function LandingHero() {
