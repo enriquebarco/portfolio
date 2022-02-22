@@ -2,7 +2,7 @@ import React from 'react';
 import uniqid from "uniqid";
 import "./Project.scss";
 
-export default function Project( { image, name, description, stack } ) {
+export default function Project( { image, name, description, stack, link } ) {
   return (
     <div className="project">
         <img src={image} className="project__image" />
@@ -13,7 +13,7 @@ export default function Project( { image, name, description, stack } ) {
             return <img key={uniqid()} src={stack} alt="tech-stack icon" className="project__stack-icon" />
           })}
         </div>
-        <a target="_blank" href="" className="project__link">Learn More</a>
+        <a target="_blank" href={link} className="project__link">Learn More</a>
     </div>
   )
 }

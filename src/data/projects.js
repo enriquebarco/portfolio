@@ -18,7 +18,7 @@ export default [
         "name": "unbound",
         "description": "A tech enabled self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
         "image": unbound,
-        "link": "",
+        "link": "https://github.com/enriquebarco/unbound",
         "stack": [
             Javascript,
             ReactLogo,
