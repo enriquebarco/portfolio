@@ -24,6 +24,10 @@ import tennisIcon from "../../assets/icons/tennis.png";
 import poloIcon from "../../assets/icons/polo.png";
 import scubaIcon from "../../assets/icons/scuba.png"
 import pianoIcon from "../../assets/icons/grand-piano.png";
+import guitarIcon from "../../assets/icons/guitar.png";
+import handpanIcon from "../../assets/icons/hang.png";
+import cajonIcon from "../../assets/icons/cajon.png";
+import ukuleleIcon from "../../assets/icons/ukulele.png";
 
 
 import "./AboutMe.scss";
@@ -88,12 +92,13 @@ export default function AboutMe() {
                 <img src={hongKongFlag} alt="hong kong flag" className="about-me__flag" />
                 <img src={chinaFlag} alt="china flag" className="about-me__flag" />
             </div>
-            <h5 className="about-me__subtitle">Favorite Sports</h5>
+            <h5 className="about-me__subtitle">My Favorite Sports</h5>
             <div className="about-me__sports-container">
                 <img src={surfIcon} alt="surf icon" className="about-me__sports-icon" />
                 <img src={kiteSurfIcon} alt="kitesurf icon" className="about-me__sports-icon" />
                 <img src={tennisIcon} alt="tennis icon" className="about-me__sports-icon" />
                 <img src={poloIcon} alt="polo icon" className="about-me__sports-icon" />
+                <img src={scubaIcon} alt="scuba icon" className="about-me__sports-icon" />
             </div>
         </div>
         <div className="about-me__card">
@@ -101,12 +106,12 @@ export default function AboutMe() {
             <h4 className="about-me__title">My Musical Side</h4>
             <p className="about-me__sub-text">I enjoy collecting and playing instruments, I learned piano when I was five and self-taught myself the guitar at fifteen. The most recent addition to the collection was the handpan!</p>
             <h5 className="about-me__subtitle">My Instruments</h5>
-            <div className="about-me__flags-container">
-                <img src="" alt="" className="about-me__Instrument" />
-                <img src="" alt="" className="about-me__Instrument" />
-                <img src="" alt="" className="about-me__Instrument" />
-                <img src="" alt="" className="about-me__Instrument" />
-                <img src="" alt="" className="about-me__Instrument" />
+            <div className="about-me__instruments-container">
+                <img src={pianoIcon} alt="piano icon" className="about-me__instrument-icon" />
+                <img src={guitarIcon} alt="guitar icon" className="about-me__instrument-icon" />
+                <img src={handpanIcon} alt="handpan icon" className="about-me__instrument-icon" />
+                <img src={cajonIcon} alt="cajon icon" className="about-me__instrument-icon" />
+                <img src={ukuleleIcon} alt="ukulele icon" className="about-me__instrument-icon" />
             </div>
         </div>
     </section>

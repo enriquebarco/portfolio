@@ -21,7 +21,7 @@
     }
 
     &__title {
-        font-variation-settings: "wght" 600;
+        font-variation-settings: "wght" 700;
         font-size: 1.125rem;
         margin-bottom: 0;
     }
@@ -36,7 +36,7 @@
 
     &__subtitle {
         font-size: 1rem;
-        font-variation-settings: "wght" 500;
+        font-variation-settings: "wght" 600;
         margin-bottom: 0;
     }
 
@@ -86,7 +86,7 @@
 
     &__flag {
         width: 3rem;
-        margin: .5rem;
+        margin: .7rem;
     }
 
     &__sports-container {
@@ -98,6 +98,19 @@
 
     &__sports-icon {
         width: 3rem;
-        margin: .5rem;
+        margin: 1rem;
     }
+
+    &__instruments-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__instrument-icon {
+        width: 3rem;
+        margin: 1rem;
+    }
+
 }
