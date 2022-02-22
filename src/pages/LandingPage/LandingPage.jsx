@@ -3,6 +3,7 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import LandingHero from '../../components/LandingHero/LandingHero';
 import MyIntroduction from '../../components/MyIntroduction/MyIntroduction';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
+import ProjectsIntro from '../../components/ProjectsIntro/ProjectsIntro';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 
 export class LandingPage extends Component {
@@ -18,6 +19,7 @@ componentDidMount() {
           <LandingHero />
           <MyIntroduction />
           <AboutMe />
+          <ProjectsIntro />
           <ProjectsList />
       </div>
     )
