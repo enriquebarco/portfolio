@@ -1,3 +1,6 @@
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+
 .project {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,7 @@
         text-align: center;
         font-variation-settings: "wght" 700;
         margin-bottom: 0rem;
+        font-size: 1.25rem;
     }
 
     &__description {
@@ -27,10 +31,34 @@
     &__stack-container {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
     }
 
     &__stack-icon {
         width: 15%;
+        height: 15%;
+        margin: .3rem;
+    }
+
+    &__link {
+        margin: 1rem;
+        text-decoration: none;
+        text-align: center;
+        background-image: linear-gradient(-180deg, $color-primary, $color-primary-faded, $color-primary);
+        border: solid 1px $color-primary;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+        cursor: pointer;
+        outline: 0;
+        overflow: hidden;
+        border-radius: 6%;
+        border: 0;
+        transition: box-shadow .2s;
+        color: white;
+        width: 40%;
+        padding: .5rem  1rem;
+        align-self: center;
+        font-family: "Montserrat";
+        font-size: .875rem;
     }
 }

@@ -35,13 +35,13 @@ export class PageHeader extends Component {
         {this.state.isOpen ? 
         <div className="header__hidden-CTA">
           <div className="header__hidden-container">
-            <a href="https://github.com/enriquebarco" className="header__media-links">
+            <a target="_blank" href="https://github.com/enriquebarco" className="header__media-links">
               <img src={Github} alt="github icon" className="header__media-icons" />
             </a>
-            <a href="https://www.linkedin.com/in/enriquebarco/" className="header__media-links">
+            <a target="_blank" href="https://www.linkedin.com/in/enriquebarco/" className="header__media-links">
               <img src={Linkedin} alt="linkedin icon" className="header__media-icons" />
             </a>
-            <a href="https://www.instagram.com/kikebarco/" className="header__media-links">
+            <a target="_blank" href="https://www.instagram.com/kikebarco/" className="header__media-links">
               <img src={Instagram} alt="instagram icon" className="header__media-icons" />
             </a>
           </div>

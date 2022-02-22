@@ -1,4 +1,5 @@
 import React from 'react';
+import uniqid from "uniqid";
 import "./Project.scss";
 
 export default function Project( { image, name, description, stack } ) {
@@ -9,10 +10,10 @@ export default function Project( { image, name, description, stack } ) {
         <h5 className="project__description">{description}</h5>
         <div className="project__stack-container">
           {stack.map(stack => {
-            return <img src={stack} alt="tech-stack icon" className="project__stack-icon" />
+            return <img key={uniqid()} src={stack} alt="tech-stack icon" className="project__stack-icon" />
           })}
         </div>
-        <a href="" className="project__link">Learn More</a>
+        <a target="_blank" href="" className="project__link">Learn More</a>
     </div>
   )
 }

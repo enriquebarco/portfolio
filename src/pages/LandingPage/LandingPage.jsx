@@ -5,6 +5,11 @@ import { PageHeader } from '../../components/PageHeader/PageHeader';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 
 export class LandingPage extends Component {
+
+componentDidMount() {
+  document.title = "Enrique Barco"
+}
+
   render() {
     return (
       <div className='landing-page'>
