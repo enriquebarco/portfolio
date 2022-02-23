@@ -3,5 +3,19 @@
 .projects-intro {
     margin-top: -15rem;
     background-color: $color-primary;
+    padding: 2rem;
     padding-bottom: 10rem;
+    color: white;
+    text-align: center;
+
+    &__title {
+        font-size: 1.25rem;
+        font-variation-settings: "wght" 700;
+        line-height: 1.6rem;
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+    }
 }
