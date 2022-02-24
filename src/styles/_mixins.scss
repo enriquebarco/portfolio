@@ -1,0 +1,19 @@
+@use "./variables" as *;
+@use "./typography" as *;
+
+// button
+@mixin button-style {
+    background-color: transparent;
+    border-color: $color-primary;
+    border-width: .0938rem;
+    color: $color-primary;
+    border-radius: 18155.375rem;
+    cursor: pointer;
+    font-family: "Montserrat";
+    width: 8rem;
+    height: 3rem;
+    font-variation-settings: "wght" 600;
+    align-self: center;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}

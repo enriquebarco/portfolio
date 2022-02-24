@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Logo from "../../assets/icons/memoji.jpeg";
+import compLogo from "../../assets/icons/memoji.jpeg";
+import waveLogo from "../../assets/icons/memoji-wave.png";
 import Github from "../../assets/icons/github.png";
 import Linkedin from "../../assets/icons/linkedin.png";
 import Instagram from "../../assets/icons/instagram.png";
+import 'animate.css'
 
 
 import "./PageHeader.scss";
@@ -16,14 +18,20 @@ export class PageHeader extends Component {
   handleClick = () => {
     const change = !this.state.isOpen;
     this.setState({ isOpen: change })
+
+    const grab = document.getElementsByClassName("header__button-area")
+
 }
 
   render() {
     return (
       <header className="header">
         <div className="header__container">
-          <img className="header__logo" src={Logo} alt="logo placeholder" />
-          <div className="header__button-area">
+          {this.state.isOpen ? 
+            <img className="header__logo animate__animated animate__fadeIn" src={waveLogo} alt="enrique barco memoji computer" /> 
+            : 
+            <img src={compLogo} alt="enrique barco memoji wave" className="header__logo" />}
+          <div className={"header__button-area"}>
             <label className="header__button-label" htmlFor="check" >
               <input className="header__input" type="checkbox" id="check"  onClick={this.handleClick}/> 
               <span className='header__button-bar header__button-bar--1'></span>
@@ -33,7 +41,7 @@ export class PageHeader extends Component {
           </div>
         </div>
         {this.state.isOpen ? 
-        <div className="header__hidden-CTA">
+        <div className="header__hidden-CTA animate__animated animate__fadeIn">
           <div className="header__hidden-container">
             <a target="_blank" href="https://github.com/enriquebarco" className="header__media-links">
               <img src={Github} alt="github icon" className="header__media-icons" />

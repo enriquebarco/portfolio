@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+
+.footer {
+    background-color: $color-primary;
+    color: rgb(196, 196, 196);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: -8rem;
+
+    &__icon {
+        width: 5rem;
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-variation-settings: "wght" 600;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__subtext {
+        font-size: .75rem;
+    }
+
+    &__tech-icon {
+        width: 3rem;
+    }
+
+}

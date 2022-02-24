@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AboutMe from '../../components/AboutMe/AboutMe';
+import Footer from '../../components/PageFooter/PageFooter';
 import LandingHero from '../../components/LandingHero/LandingHero';
 import MyIntroduction from '../../components/MyIntroduction/MyIntroduction';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
@@ -21,6 +22,7 @@ componentDidMount() {
           <AboutMe />
           <ProjectsIntro />
           <ProjectsList />
+          <Footer />
       </div>
     )
   }
