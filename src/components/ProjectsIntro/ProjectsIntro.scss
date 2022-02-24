@@ -18,4 +18,36 @@
         font-size: 0.875rem;
         line-height: 1.3rem;
     }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-variation-settings: "wght" 700;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: .0625rem;
+            background-color: white;
+            transition: transform 300ms ease-in-out;
+    
+            transform: scaleX(0);
+        }
+    
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+
+}
+
+.break {
+    &::after {
+        content: "\A";
+        white-space: pre;
+    }
 }
