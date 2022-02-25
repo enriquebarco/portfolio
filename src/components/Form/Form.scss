@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.form {
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 1.25rem;
+        text-align: center;
+        font-variation-settings: "wght" 600;
+        color: $color-primary;
+        line-height: 1.7rem;
+    }
+
+    &__textarea {
+        height: 5rem;
+        margin-bottom: 1rem;
+        border: .0625rem solid rgb(180, 180, 180);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-size: inherit;
+        resize: none;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+            box-shadow: 0 0 .125rem $color-primary;
+        }
+    }
+
+    &__button {
+        @include button-style;
+        width:80%;
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition:.2s ease-in-out;
+        }
+    }
+}

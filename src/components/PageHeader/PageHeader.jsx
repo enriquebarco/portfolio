@@ -8,6 +8,7 @@ import 'animate.css'
 
 
 import "./PageHeader.scss";
+import { Link } from 'react-router-dom';
 
 
 export class PageHeader extends Component {
@@ -28,9 +29,13 @@ export class PageHeader extends Component {
       <header className="header">
         <div className="header__container">
           {this.state.isOpen ? 
-            <img className="header__logo animate__animated animate__fadeIn" src={waveLogo} alt="enrique barco memoji computer" /> 
+            <Link to="/">
+              <img className="header__logo animate__animated animate__fadeIn" src={waveLogo} alt="enrique barco memoji computer" /> 
+            </Link>
             : 
-            <img src={compLogo} alt="enrique barco memoji wave" className="header__logo" />}
+            <Link to="/">
+              <img src={compLogo} alt="enrique barco memoji wave" className="header__logo" /> 
+            </Link>}
           <div className={"header__button-area"}>
             <label className="header__button-label" htmlFor="check" >
               <input className="header__input" type="checkbox" id="check"  onClick={this.handleClick}/> 
@@ -53,7 +58,9 @@ export class PageHeader extends Component {
               <img src={Instagram} alt="instagram icon" className="header__media-icons" />
             </a>
           </div>
-          <button className="header__button">Get in Touch</button>
+          <Link className="header__button-link" to="/contact">
+            <button className="header__button">Get in Touch</button>
+          </Link>
         </div> : ""}
     </header>
     )

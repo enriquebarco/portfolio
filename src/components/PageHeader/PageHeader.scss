@@ -86,6 +86,10 @@
         width: 3rem;
     }
 
+    &__button-link {
+        align-self: center;
+    }
+
     &__button {
         @include button-style;
 

@@ -40,7 +40,7 @@ export default [
     {
         "id": uniqid(),
         "name": "Kabila Group",
-        "description": "Kabila is a multi-day kitesurfing experience platform. We have listings in nearly 20 countries and include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris, and much more!",
+        "description": "Kabila is a multi-day kitesurfing experience platform. We have listings in more than 20 countries which include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris, and much more!",
         "image": kabila,
         "link": "https://www.kabilagroup.com/",
         "stack": [
