@@ -101,7 +101,7 @@ export default function AboutMe() {
                 <img src={scubaIcon} alt="scuba icon" className="about-me__sports-icon" />
             </div>
         </div>
-        <div className="about-me__card">
+        <div className="about-me__card about-me__card--last">
             <img src={Music} alt="" className="about-me__icon" />
             <h4 className="about-me__title">My Musical Side</h4>
             <p className="about-me__sub-text">I enjoy collecting and playing instruments, I learned piano when I was five and self-taught myself the guitar at fifteen. The most recent addition to the collection was the handpan!</p>

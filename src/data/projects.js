@@ -52,7 +52,7 @@ export default [
     {
         "id": uniqid(),
         "name": "breathe",
-        "description": "Created in a hack-a-thon led by WHOOP, breath is an additional health feature for the whoop app created by a team of 3 UX designed and 3 full stack developers (including myself) that allows users to perform guided breathing exercises",
+        "description": "Created in a hack-a-thon organized by WHOOP, breathe is an additional health feature for the whoop app created by a team of 3 UX designed and 3 full stack developers (including myself) that allows users to perform guided breathing exercises",
         "image": breathe,
         "link": "https://github.com/jtkwan91/whoop-industry-project",
         "stack": [
