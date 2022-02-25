@@ -4,6 +4,15 @@
 
 .header {
     background-color: white;
+    
+    @include tablet {
+        padding: 0rem 2rem;
+    }
+
+    @include desktop {
+        padding: 0rem 4rem;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -72,7 +81,11 @@
         display: flex;
         flex-direction: column;
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        
+
+        @include tablet {
+            align-items: center;
+        }
+
     }
 
     &__hidden-container {
@@ -84,6 +97,10 @@
 
     &__media-icons {
         width: 3rem;
+
+        @include tablet {
+            margin: 0rem 2rem;
+        }
     }
 
     &__button-link {
@@ -92,6 +109,12 @@
 
     &__button {
         @include button-style;
+
+        @include tablet {
+            margin-top: 1rem;
+            width: 12rem;
+            height: 3rem;
+        }
 
         &:hover {
             background-color: $color-primary;
