@@ -11,19 +11,23 @@
     background-color: white;
 
     @include tablet {
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
+    }
+
+    @include desktop {
+        padding: 1rem 6rem;
     }
 
     &__title {
         text-align: center;
-        font-variation-settings: "wght" 600;
+        font-variation-settings: "wght" 700;
         margin-bottom: 0;
         line-height: 2rem;
         color: $color-primary;
 
         @include tablet {
             font-size: 1.75rem;
-            line-height: 3rem;
+            line-height: 2.6rem;
         }
 
         @include desktop {
@@ -35,15 +39,19 @@
         font-size: .875rem;
         text-align: center;
         line-height: 1.3rem;
+        padding: 0rem 2rem;
         margin: 1rem 0rem;
 
         @include tablet {
             font-size: 1.2rem;
             line-height: 2rem;
+            padding: 0rem 3rem;
         }
 
         @include desktop {
             font-size: 1.4rem;
+            line-height: 2.3rem;
+            padding: 0rem 14rem;
         }
     }
 
@@ -56,11 +64,13 @@
         margin-bottom: 2rem;
 
         @include tablet {
-            width: 60%
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            width: 40%
         }
 
         @include desktop {
-            width: 45%;
+            width: 30%;
         }
     }
 
