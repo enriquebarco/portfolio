@@ -7,7 +7,7 @@ export default function FooterBanner() {
     <div className="footer-banner" >
         <h3 className="footer-banner__title">Let's collaborate</h3>
         <p className="footer-banner__text">Interested in hiring me or working together? Lets schedule a chat!</p>
-        <Link to="/contact">Get in touch</Link>
+        <Link className="footer-banner__link" to="/contact">Get in touch</Link>
     </div>
   )
 }

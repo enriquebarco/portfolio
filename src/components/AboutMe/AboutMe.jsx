@@ -59,7 +59,7 @@ export default function AboutMe() {
                 </div>
                 <div className="about-me__favorite-space-wrapper">
                     <img src={checkMark} alt="checkmark icon" className="about-me__checkmark-icon" />
-                    <p className="about-me__favorite-space-text">Blockchain</p>
+                    <p className="about-me__favorite-space-text">Web3 DeFi</p>
                 </div>
                 <div className="about-me__favorite-space-wrapper">
                     <img src={checkMark} alt="checkmark icon" className="about-me__checkmark-icon" />

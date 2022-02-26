@@ -7,9 +7,8 @@ import "./PageFooter.scss";
 
 export default function () {
   return (
-    <>
-      <FooterBanner />
       <footer className="footer">
+        <FooterBanner />
           <img src={memojiIcon} alt="" className="footer__icon" />
           <p className="footer__text">Living, learning, & leveling up one day at a time</p>
           <p className="footer__subtext">Created by yours truly with  </p>
@@ -18,6 +17,5 @@ export default function () {
               <img className="footer__tech-icon" src={sassLogo} alt="sass logo" img />
           </div>
       </footer>
-    </>
   )
 }

@@ -70,22 +70,7 @@
     }
 
     &__link {
-        text-decoration: none;
-        background-color: transparent;
-        border-color: $color-primary;
-        border-width: .0938rem;
-        color: $color-primary;
-        border-radius: 18155.375rem;
-        width: 8rem;
-        font-size: .875rem;
-        padding: .7rem 0;
-        font-variation-settings: "wght" 600;
-        font-family: "Montserrat";
-        border: .0938rem solid $color-primary;
-        align-self: center;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        @include link-style;
 
         @include tablet {
             font-size: 1.15rem;
