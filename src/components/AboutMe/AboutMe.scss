@@ -161,6 +161,7 @@
 
     &__flag {
         width: 3rem;
+        height: auto;
         margin: .7rem;
 
         @include tablet {
