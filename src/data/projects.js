@@ -1,7 +1,9 @@
 import uniqid from "uniqid";
 import unbound from "../assets/images/unbound.png";
 import kabila from "../assets/images/kabila.png";
-import breathe from "../assets/images/breathe.png"
+import breathe from "../assets/images/breathe.png";
+import waltjr from "../assets/images/waltjr.png";
+import TypeScript from "../assets/icons/typescript.png";
 import Javascript from "../assets/icons/javascript.png";
 import ReactLogo from "../assets/icons/react.png";
 import SassLogo from "../assets/icons/Sass.png";
@@ -20,7 +22,7 @@ export default [
     {
         "id": uniqid(),
         "name": "unbound",
-        "description": "A tech enabled self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
+        "description": "A tech-enabled, self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
         "image": unbound,
         "link": "https://github.com/enriquebarco/unbound",
         "stack": [
@@ -40,7 +42,7 @@ export default [
     {
         "id": uniqid(),
         "name": "Kabila Group",
-        "description": "Kabila is a multi-day kitesurfing experience platform. We have listings in more than 20 countries which include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris, and much more!",
+        "description": "Kabila is a multi-day kitesurfing experience platform. We have listings in more than 20 countries which include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris and much more!",
         "image": kabila,
         "link": "https://www.kabilagroup.com/",
         "stack": [
@@ -52,7 +54,7 @@ export default [
     {
         "id": uniqid(),
         "name": "breathe",
-        "description": "Created in a hack-a-thon organized by WHOOP, breathe is an additional health feature for the whoop app created by a team of 3 UX designed and 3 full stack developers (including myself) that allows users to perform guided breathing exercises",
+        "description": "I created an additional health feature for the WHOOP app as a part of a team of 3 full-stack developers and 3 UX designers in a hackathon",
         "image": breathe,
         "link": "https://github.com/jtkwan91/whoop-industry-project",
         "stack": [
@@ -60,6 +62,18 @@ export default [
             ReactLogo,
             SassLogo,
         ]
-    }
-    
+        
+    },
+    {
+    "id": uniqid(),
+    "name": "Walt Jr.",
+    "description": "Walt Jr. is a budgeting application that allows users to manage their expenses",
+    "image": waltjr,
+    "link": "https://walt-jr-336l2.ondigitalocean.app/",
+    "stack": [
+        TypeScript,
+        ReactLogo,
+        SassLogo,
+    ]
+    },
 ]

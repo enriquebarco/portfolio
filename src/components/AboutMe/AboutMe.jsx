@@ -37,7 +37,7 @@ export default function AboutMe() {
     <section className="about-me">
         <div className="about-me__card">
             <img src={FullStack} alt="" className="about-me__icon" />
-            <h4 className="about-me__title">Full Stack Developer</h4>
+            <h4 className="about-me__title">Full-Stack Developer</h4>
             <p className="about-me__sub-text">I like to build products that solve a problem or have an impactful use case for my users</p>
             <h5 className="about-me__subtitle">My Tech Stack</h5>
             <div className="about-me__tech-stack-container">
@@ -82,7 +82,7 @@ export default function AboutMe() {
         <div className="about-me__card">
             <img src={Map} alt="" className="about-me__icon" />
             <h4 className="about-me__title">My Adventurous Side</h4>
-            <p className="about-me__sub-text">I've lived in 5 continents and traveled over 25% of the world. When I am not building a new product or travelling, you can find me surfing, kitesurfing, and playing competitive tennis</p>
+            <p className="about-me__sub-text">I've lived in 5 continents and traveled over 25% of the world. When I am not building a new product or travelling, you can find me surfing, kitesurfing and playing competitive tennis</p>
             <h5 className="about-me__subtitle">Countries I've Lived</h5>
             <div className="about-me__flags-container">
                 <img src={colombiaFlag} alt="colombia flag" className="about-me__flag" />
@@ -104,7 +104,7 @@ export default function AboutMe() {
         <div className="about-me__card about-me__card--last">
             <img src={Music} alt="" className="about-me__icon" />
             <h4 className="about-me__title">My Musical Side</h4>
-            <p className="about-me__sub-text">I enjoy collecting and playing instruments, I learned piano when I was five and self-taught myself the guitar at fifteen. The most recent addition to the collection was the handpan!</p>
+            <p className="about-me__sub-text">I enjoy collecting and playing instruments; I learned piano when I was five and self-taught myself the guitar at fifteen. The most recent addition to the collection was the handpan!</p>
             <h5 className="about-me__subtitle">My Instruments</h5>
             <div className="about-me__instruments-container">
                 <img src={pianoIcon} alt="piano icon" className="about-me__instrument-icon" />
