@@ -1,0 +1,82 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.projects-intro {
+    margin-top: -15rem;
+    background-color: $color-primary;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    color: white;
+    text-align: center;
+
+    @include tablet {
+        padding: 4rem;
+        padding-bottom: 10rem;
+    }
+
+    @include desktop {
+        padding: 6rem;
+        padding-bottom: 10rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-variation-settings: "wght" 700;
+        line-height: 1.6rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include desktop {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.7rem;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-variation-settings: "wght" 700;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: .0625rem;
+            background-color: white;
+            transition: transform 300ms ease-in-out;
+    
+            transform: scaleX(0);
+        }
+    
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+
+}
+
+.break {
+    &::after {
+        content: "\A";
+        white-space: pre;
+    }
+}

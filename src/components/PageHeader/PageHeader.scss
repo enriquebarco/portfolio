@@ -1,0 +1,157 @@
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles//mixins" as *;
+
+.header {
+    background-color: white;
+    padding: 1rem;
+    
+    @include tablet {
+        padding: 1rem 4rem;
+    }
+
+    @include desktop {
+        padding: 1rem 6rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 4rem;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+
+        &:hover {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    &__button-area {
+        display:grid;
+        place-items:start end;
+        margin:0;
+        padding:0;
+    }
+
+    &__button-label {
+        display:flex;
+         flex-direction:column;
+         width:35px;
+         cursor:pointer;
+    }
+
+    &__button-bar {
+        background: $color-primary;
+        border-radius:10px;
+        height:4px;
+        margin: 4px 0;
+        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        &--1 {
+            width:50%;
+        }
+
+        &--2 {
+            width:100%;
+        }
+
+        &--3 {
+            width:75%;
+        }
+    }
+
+    &__input {
+      display:none;
+    }
+
+    &__input:checked ~ .header__button-bar--1{
+      transform-origin:bottom;
+      transform:rotatez(45deg) translate(6px,1px)
+    }
+
+    &__input:checked ~ .header__button-bar--2 {
+      transform-origin:top;
+      transform:rotatez(-45deg)
+    }
+
+    &__input:checked ~ .header__button-bar--3{
+      transform-origin:bottom;
+      width:50%;
+      transform: translate(16px,-7px) rotatez(45deg);
+    }
+
+    &__hidden-CTA {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+        @include tablet {
+            align-items: center;
+        }
+
+    }
+
+    &__hidden-container {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &__media-icons {
+        width: 3rem;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+
+        &:hover {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        @include tablet {
+            margin: 0rem 2rem;
+        }
+    }
+
+    &__button-link {
+        align-self: center;
+    }
+
+    &__button {
+        @include button-style;
+
+        @include tablet {
+            margin-top: 1rem;
+            width: 12rem;
+            height: 3rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition:.2s ease-in-out;
+        }
+    }
+}

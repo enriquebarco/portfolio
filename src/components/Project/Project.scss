@@ -1,0 +1,87 @@
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles//mixins" as *;
+
+.project {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+
+    @include tablet {
+        margin: 1rem 4rem;
+    }
+
+    @include desktop {
+        width: 30rem;
+        margin: 1rem;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 0.5rem;
+
+        @include tablet {
+            height: 15rem;
+        }
+    }
+
+    &__name {
+        text-align: center;
+        font-variation-settings: "wght" 700;
+        margin-bottom: 0rem;
+        font-size: 1.25rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font-size: .875rem;
+        padding: 0 1rem;
+        line-height: 1.2rem;
+
+        @include tablet {
+            font-size: 1.15rem;
+            line-height: 1.7rem;
+            padding: 0 4rem;
+        }
+    }
+
+    &__stack-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__stack-icon {
+        width: 3rem;
+        margin: .7rem;
+
+        @include tablet {
+            width: 5rem;
+            margin: 1rem;
+        }
+    }
+
+    &__link {
+        @include link-style;
+
+        @include tablet {
+            font-size: 1.15rem;
+            width: 12rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition:.2s ease-in-out;
+        }
+
+    }
+}

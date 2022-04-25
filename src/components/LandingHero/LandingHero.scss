@@ -1,0 +1,103 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.landing-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    background-color: white;
+
+    @include tablet {
+        padding: 1rem 4rem;
+    }
+
+    @include desktop {
+        padding: 1rem 6rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-variation-settings: "wght" 700;
+        margin-bottom: 0;
+        line-height: 2rem;
+        color: $color-primary;
+
+        @include tablet {
+            font-size: 1.75rem;
+            line-height: 2.6rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: .875rem;
+        text-align: center;
+        line-height: 1.3rem;
+        padding: 0rem 2rem;
+        margin: 1rem 0rem;
+
+        @include tablet {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            padding: 0rem 3rem;
+        }
+
+        @include desktop {
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+            padding: 0rem 14rem;
+        }
+    }
+
+    &__link {
+        @include link-style;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: 1rem;
+            width: 12rem;
+        }
+
+        @include desktop {
+            font-size: 1.15rem;
+            width: 15rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition:.2s ease-in-out;
+        }
+    }
+
+    &__image {
+        margin-top: 1rem;
+        border-radius: 50%;
+        width: 80%;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            width: 40%
+        }
+
+        @include desktop {
+            width: 30%;
+        }
+    }
+
+    &__decoration-image {
+        width: 20rem;
+        margin: 0;
+        border-radius: 1rem;
+    }
+}

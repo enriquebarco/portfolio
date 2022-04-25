@@ -1,0 +1,50 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.introduction {
+    background-color: $color-primary;
+    text-align: center;
+    color: white;
+    padding: 3rem 2rem;
+    padding-bottom: 20rem;
+
+    @include tablet {
+        padding: 4rem;
+        padding-bottom: 20rem;
+    }
+
+    @include desktop {
+        padding: 6rem;
+        padding-bottom: 20rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-variation-settings: "wght" 700;
+        line-height: 1.6rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include desktop {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__text {
+        font-size: .875rem;
+        line-height: 1.3rem;
+
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.7rem;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+    }
+
+}
