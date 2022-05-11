@@ -30,7 +30,7 @@ export default [
     {
         "id": uniqid(),
         "name": "Unbound",
-        "description": "A tech-enabled, self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
+        "description": "Tech-enabled, self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
         "image": unbound,
         "link": "https://github.com/enriquebarco/unbound",
         "stack": [
@@ -50,7 +50,7 @@ export default [
     {
         "id": uniqid(),
         "name": "Kuzuia",
-        "description": "Real-time cryptocurrency tracker that is capable of displaying live data for over 170 currency pairs. Kuzuia allows users to gather consolidated market information in order to make trading decisions.",
+        "description": "Real-time cryptocurrency tracker that is capable of displaying live data for over 170 currency pairs. Kuzuia allows users to gather consolidated market information in order to make trading decisions",
         "image": kuzuia,
         "link": "https://kuzuia.netlify.app/",
         "stack": [
