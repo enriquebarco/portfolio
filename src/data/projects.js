@@ -1,5 +1,6 @@
 import uniqid from "uniqid";
 import unbound from "../assets/images/unbound.png";
+import kuzuia from "../assets/images/kuzuia.png";
 import kabila from "../assets/images/kabila.png";
 import breathe from "../assets/images/breathe.png";
 import waltjr from "../assets/images/waltjr.png";
@@ -22,6 +23,8 @@ import FacebookLogo from "../assets/icons/facebook.png";
 import htmlLogo from "../assets/icons/html.png";
 import cssLogo from "../assets/icons/css.png";
 import herokuLogo from "../assets/icons/heroku.png";
+import netlifyLogo from "../assets/icons/netlify.png";
+import coinbaseLogo from "../assets/icons/coinbase.png";
 
 export default [
     {
@@ -42,6 +45,20 @@ export default [
             StripeLogo,
             GoogleMapsLogo,
             DigitalOceanLogo,
+        ]
+    },
+    {
+        "id": uniqid(),
+        "name": "Kuzuia",
+        "description": "Real-time cryptocurrency tracker that is capable of displaying live data for over 170 currency pairs. Kuzuia allows users to gather consolidated market information in order to make trading decisions.",
+        "image": kuzuia,
+        "link": "https://kuzuia.netlify.app/",
+        "stack": [
+            Javascript,
+            ReactLogo,
+            SassLogo,
+            coinbaseLogo,
+            netlifyLogo,
         ]
     },
     {
