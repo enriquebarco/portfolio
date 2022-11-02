@@ -63,6 +63,10 @@
         background-color: #fff;
         margin-bottom: 2rem;
 
+        &:hover {
+            cursor: pointer;
+        }
+
         @include tablet {
             margin-top: 2rem;
             margin-bottom: 4rem;
