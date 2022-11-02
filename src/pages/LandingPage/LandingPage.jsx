@@ -16,20 +16,23 @@ const LandingPage = () => {
   },[]);
 
     return (
-      <div className='landing-page'>
-          <PageHeader />
-          <LandingHero setIsThree={setIsThree}/>
+      <>
           {
-            isThree && (
+            isThree ? (
               <Three />
+            ) : (
+              <div className='landing-page'>
+                  <PageHeader />
+                  <LandingHero setIsThree={setIsThree}/>
+                  <MyIntroduction />
+                  <AboutMe />
+                  <ProjectsIntro />
+                  <ProjectsList />
+                  <Footer />
+              </div>
             )
           }
-          <MyIntroduction />
-          <AboutMe />
-          <ProjectsIntro />
-          <ProjectsList />
-          <Footer />
-      </div>
+      </>
     )
   }
 
