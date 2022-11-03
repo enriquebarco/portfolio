@@ -11,6 +11,8 @@ import expressLogo from "../../assets/icons/express.png";
 import digitalOceanLogo from "../../assets/icons/digital-ocean.png";
 import knexLogo from "../../assets/icons/knex.png";
 import mysqlLogo from "../../assets/icons/mysql.png";
+import reduxLogo from "../../assets/icons/redux.png";
+import reduxSagaLogo from "../../assets/icons/redux-saga.png";
 import checkMark from "../../assets/icons/check-mark.png";
 import colombiaFlag from "../../assets/icons/colombia.png";
 import unitedStatesFlag from "../../assets/icons/united-states.png";
@@ -43,6 +45,8 @@ export default function AboutMe() {
             <div className="about-me__tech-stack-container">
                 <img src={javascriptLogo} alt="JS logo" className="about-me__tech-stack-icon" />
                 <img src={reactLogo} alt="react logo" className="about-me__tech-stack-icon" />
+                <img src={reduxLogo} alt="redux logo" className="about-me__tech-stack-icon" />
+                <img src={reduxSagaLogo} alt="redux-saga logo" className="about-me__tech-stack-icon" />
                 <img src={sassLogo} alt="sass logo" className="about-me__tech-stack-icon" />
                 <img src={axiosLogo} alt="axios logo" className="about-me__tech-stack-icon" />
                 <img src={nodeLogo} alt="node logo" className="about-me__tech-stack-icon" />
