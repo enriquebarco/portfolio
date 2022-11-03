@@ -55,6 +55,27 @@
         }
     }
 
+    &__link {
+        @include link-style;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: 1rem;
+            width: 12rem;
+        }
+
+        @include desktop {
+            font-size: 1.15rem;
+            width: 15rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            transition:.2s ease-in-out;
+        }
+    }
+
     &__image {
         margin-top: 1rem;
         border-radius: 50%;

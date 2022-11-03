@@ -10,7 +10,7 @@ export default function () {
       <footer className="footer">
         <FooterBanner />
           <img src={memojiIcon} alt="" className="footer__icon" />
-          <p className="footer__text">Living, learning, & leveling up one day at a time</p>
+          <p className="footer__text">Living, learning & leveling up one day at a time</p>
           <p className="footer__subtext">Created by yours truly with  </p>
           <div className="footer__wrapper">
               <img className="footer__tech-icon" src={reactLogo} alt="react logo" img />
