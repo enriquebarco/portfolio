@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import {useEffect} from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import "./index.scss";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function AppWithCallbackAfterRender() {
+  useEffect(() => {
+    console.log('rendered');
+  });
 
+  return <App tab="home" />
+}
 
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<AppWithCallbackAfterRender />);
