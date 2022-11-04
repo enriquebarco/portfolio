@@ -17,7 +17,7 @@ export default function Three() {
       <Suspense fallback={<></>}> 
         <hemisphereLight color="white" groundColor="blue" intensity={0.75} />
         <spotLight position={[50, 50, 10]} angle={0.15} penumbra={1} />
-        <group position={[0, -10, 0]}>
+        <group onClick={() => console.log("wadup bitch!")} position={[0, -10, 0]}>
           <Model position={[0, 0.25, 0]} url={MODELS[model]} />
           <ContactShadows scale={20} blur={10} far={20} />
         </group>
