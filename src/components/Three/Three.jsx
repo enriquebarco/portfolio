@@ -1,34 +1,33 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera } from '@react-three/drei';
+import { useGLTF, OrbitControls, ContactShadows } from '@react-three/drei';
+import { useControls } from 'leva';
 
-const angleToRadians = (angleInDeg) => (Math.PI / 180) * angleInDeg;
-
-console.log(PerspectiveCamera)
+const MODELS = {
+  Beech: 'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tree-beech/model.gltf',
+  Lime: 'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tree-lime/model.gltf',
+  Spruce: 'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tree-spruce/model.gltf'
+}
 
 
 export default function Three() {
+  const { model } = useControls({ model: {value: 'Beech', options: Object.keys(MODELS) } })
   return (
-    <Canvas style={{ height: '100vh', background: 'black' }}>
-      <Suspense fallback={<></>}>
-        {/* camera */}
-        <PerspectiveCamera makeDefault position={[0, 1, 5]} />
-
-        {/* sphere */}
-        <mesh>
-          <sphereGeometry args={[0.5, 32, 32]} />
-          <meshStandardMaterial color="white" />
-        </mesh>
-
-        {/* floor */}
-        <mesh rotation={[ (angleToRadians(90)), 0, 0]}>
-          <planeGeometry args={[7, 7]}/>
-          <meshStandardMaterial color="blue" />
-        </mesh> 
-
-        {/* light */}
-        <ambientLight args={['white', 1]} />
+    <Canvas  style={{ height: '100vh' }} camera={{ position: [-10, 10, 40], fov: 50 }}>
+      <Suspense fallback={<></>}> 
+        <hemisphereLight color="white" groundColor="blue" intensity={0.75} />
+        <spotLight position={[50, 50, 10]} angle={0.15} penumbra={1} />
+        <group position={[0, -10, 0]}>
+          <Model position={[0, 0.25, 0]} url={MODELS[model]} />
+          <ContactShadows scale={20} blur={10} far={20} />
+        </group>
+        <OrbitControls />
       </Suspense>
     </Canvas>
   )
+}
+
+function Model({ url, ...props }) {
+  const { scene } = useGLTF(url)
+  return <primitive object={scene} {...props} />
 }
