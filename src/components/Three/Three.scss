@@ -1,0 +1,13 @@
+.three-header {
+    font-size: 2rem;
+    position: absolute;
+    right: -3rem;
+    bottom: 14rem;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    width: 50vw;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}

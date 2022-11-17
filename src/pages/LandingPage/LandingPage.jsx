@@ -19,7 +19,7 @@ const LandingPage = () => {
       <>
           {
             isThree ? (
-              <Three />
+              <Three setIsThree={setIsThree}/>
             ) : (
               <div className='landing-page'>
                   <PageHeader />
