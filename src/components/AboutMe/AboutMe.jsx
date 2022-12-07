@@ -3,6 +3,7 @@ import Music from "../../assets/icons/music.png";
 import FullStack from "../../assets/icons/developer.png";
 import Map from "../../assets/icons/location.png";
 import javascriptLogo from "../../assets/icons/javascript.png";
+import pythonLogo from "../../assets/icons/python.png";
 import reactLogo from "../../assets/icons/react.png";
 import sassLogo from "../../assets/icons/Sass.png";
 import axiosLogo from "../../assets/icons/axios.svg";
@@ -13,6 +14,7 @@ import knexLogo from "../../assets/icons/knex.png";
 import mysqlLogo from "../../assets/icons/mysql.png";
 import reduxLogo from "../../assets/icons/redux.png";
 import reduxSagaLogo from "../../assets/icons/redux-saga.png";
+import seleniumLogo from "../../assets/icons/selenium.png";
 import checkMark from "../../assets/icons/check-mark.png";
 import colombiaFlag from "../../assets/icons/colombia.png";
 import unitedStatesFlag from "../../assets/icons/united-states.png";
@@ -44,9 +46,11 @@ export default function AboutMe() {
             <h5 className="about-me__subtitle">My Tech Stack</h5>
             <div className="about-me__tech-stack-container">
                 <img src={javascriptLogo} alt="JS logo" className="about-me__tech-stack-icon" />
+                <img src={pythonLogo} alt="Python logo" className="about-me__tech-stack-icon" />
                 <img src={reactLogo} alt="react logo" className="about-me__tech-stack-icon" />
                 <img src={reduxLogo} alt="redux logo" className="about-me__tech-stack-icon" />
                 <img src={reduxSagaLogo} alt="redux-saga logo" className="about-me__tech-stack-icon" />
+                <img src={seleniumLogo} alt="Selenium logo" className="about-me__tech-stack-icon" />
                 <img src={sassLogo} alt="sass logo" className="about-me__tech-stack-icon" />
                 <img src={axiosLogo} alt="axios logo" className="about-me__tech-stack-icon" />
                 <img src={nodeLogo} alt="node logo" className="about-me__tech-stack-icon" />
