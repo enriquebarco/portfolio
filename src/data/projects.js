@@ -1,8 +1,8 @@
 import uniqid from "uniqid";
 import unbound from "../assets/images/unbound.png";
 import kuzuia from "../assets/images/kuzuia.png";
+import tennisHack from "../assets/images/tennis-hack.png";
 import kabila from "../assets/images/kabila.png";
-import breathe from "../assets/images/breathe.png";
 import waltjr from "../assets/images/waltjr.png";
 import cloud9 from "../assets/images/cloud-9.png";
 import snake from "../assets/images/snake.png";
@@ -25,6 +25,9 @@ import cssLogo from "../assets/icons/css.png";
 import herokuLogo from "../assets/icons/heroku.png";
 import netlifyLogo from "../assets/icons/netlify.png";
 import coinbaseLogo from "../assets/icons/coinbase.png";
+import pythonLogo from "../assets/icons/python.png";
+import seleniumLogo from "../assets/icons/selenium.png";
+import chromeLogo from "../assets/icons/chrome-logo.png";
 
 export default [
     {
@@ -59,6 +62,19 @@ export default [
             SassLogo,
             coinbaseLogo,
             netlifyLogo,
+        ]
+    },
+    {
+        "id": uniqid(),
+        "name": "Tennis-Hack",
+        "description": "A python script that automatically reserves my tennis courts for the peak play times. This automates the annoying process of reserving courts early in the morning before they all get booked! Built using python, selenium, headless chrome / chrome driver, and an automated scheduler",
+        "image": tennisHack,
+        "link": "https://github.com/enriquebarco/tennishack",
+        "stack": [
+            pythonLogo,
+            seleniumLogo,
+            chromeLogo,
+            herokuLogo,
         ]
     },
     {
@@ -100,8 +116,6 @@ export default [
             SassLogo,
             AxiosLogo,
             herokuLogo
-
-
         ]
     },
     {
@@ -116,18 +130,5 @@ export default [
             htmlLogo,
             herokuLogo
         ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Breathe",
-        "description": "I created an additional health feature for the WHOOP app as a part of a team of 3 full-stack developers and 3 UX designers in a hackathon",
-        "image": breathe,
-        "link": "https://github.com/jtkwan91/whoop-industry-project",
-        "stack": [
-            Javascript,
-            ReactLogo,
-            SassLogo,
-        ]
-        
-    },
+    }
 ]
