@@ -7,6 +7,7 @@ import { PageHeader } from '../../components/PageHeader/PageHeader';
 import ProjectsIntro from '../../components/ProjectsIntro/ProjectsIntro';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import Three from '../../components/Three/Three';
+import CollaborationPrompt from '../../components/CollaborationPrompt/CollaborationPrompt';
 
 const LandingPage = () => {
 
@@ -26,6 +27,7 @@ const LandingPage = () => {
                   <LandingHero setIsThree={setIsThree}/>
                   <MyIntroduction />
                   <AboutMe />
+                  <CollaborationPrompt />
                   <ProjectsIntro />
                   <ProjectsList />
                   <Footer />

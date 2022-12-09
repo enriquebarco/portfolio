@@ -33,7 +33,6 @@ import handpanIcon from "../../assets/icons/hang.png";
 import cajonIcon from "../../assets/icons/cajon.png";
 import ukuleleIcon from "../../assets/icons/ukulele.png";
 
-
 import "./AboutMe.scss";
 
 export default function AboutMe() {
