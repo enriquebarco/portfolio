@@ -17,7 +17,7 @@ function CollaborationPrompt() {
   const fetchDalle = async () => {
     if (description) {
       const response = await openai.createImage({
-        prompt: description,
+        prompt: `${description} digital art`,
         n: 1,
         size: "512x512",
       })
@@ -41,9 +41,10 @@ function CollaborationPrompt() {
   return (
     <section className="prompt">
       <div className="prompt__thought">
-        <img className="prompt__image" src={placeholder} alt="" />
+        <img className="prompt__image" src={dalle} alt="" />
       </div>
       <input type='text' id='prompt' name='prompt' onChange={handleDescriptionChange} className="prompt__text" />
+      <button onClick={fetchDalle}>think</button>
     </section>
   )
 }
