@@ -24,11 +24,7 @@
 
 
     &__card {
-        padding: 2rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include card;
 
         @include tablet {
             padding: 4rem 3rem;

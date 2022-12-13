@@ -1,13 +1,28 @@
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles//mixins" as *;
+
 .prompt{
-    background-color:orange;
+  background-color: $color-primary;
     display:flex;
-    flex-flow:row wrap;
+    flex-direction: column;
     justify-content:center;
     margin:0;
-    height:100vh;
+    height:95vh;
     align-items:center;
     align-content:center;
     padding:0 8rem;
+
+
+    &__thought-container {
+      display:flex;
+      flex-flow:row wrap;
+      justify-content:center;
+      margin:0;
+      height:100%;
+      align-items:center;
+      align-content:center;
+    }
 
     &__thought {
       margin: 1rem;
@@ -15,15 +30,22 @@
       background-color:#fff;
       padding:20px;
       border-radius:30px;
-      min-width:300px;
-      max-width:1000px;
-      min-height:40px;
+      width: 15rem;
+      min-height:25%;
       margin:20px;
       position:relative;
       align-items:center;
       justify-content:center;
       text-align:center;
       z-index: 1;
+
+      @include tablet {
+        width: 30rem;
+      }
+
+      @include desktop {
+          width: 30rem;
+      }
 
       &:before {
         content:"";
@@ -71,19 +93,37 @@
     }
 
     &__avatar {
-      width: 60%;
+      width: 8rem;
       border-radius: 30px;
       margin: 1rem;
+
+      @include tablet {
+        width: 15rem;
+      }
+
+      @include desktop {
+          width: 18rem;
+      }
+      
     }
 
     &__text {
+      resize: none;
       padding: .5rem;
+      width: 13rem;
+      border-radius: 5px;
+      height: 2rem;
+
+      &::placeholder {
+        font-size: .625rem; 
+      }
     }
 
     &__button {
-      padding: .5rem 1rem;
+      @include button-style;
+      color: white;
       font-weight: bold;
-      margin: .5rem;
+      background-color: black;
     }
 
 }

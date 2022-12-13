@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { Configuration, OpenAIApi } from 'openai';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import placeholder from "../../assets/images/kitesurf1.jpeg";
+import astro from "../../assets/images/astro.png";
+import meditate from "../../assets/icons/meditate.jpeg"
 import avatar1 from "../../assets/images/avatar1.jpeg";
 import avatar2 from "../../assets/images/avatar2.jpeg";
 import avatar3 from "../../assets/images/avatar3.jpeg";
@@ -43,12 +44,14 @@ function CollaborationPrompt() {
     <>
       <PageHeader />
       <section className="prompt">
-        <div className="prompt__thought">
-          <img className="prompt__image" src={dalle ? dalle : placeholder} alt={description ? description : 'kitesurfing'} />
+        <div className="promt__thought-container">
+          <div className="prompt__thought">
+            <img className="prompt__image" src={dalle ? dalle : astro} alt={description ? description : 'my nft'} />
+          </div>
         </div>
         <div className="prompt__container">
           <img src={avatar1} alt="" className="prompt__avatar" />
-          <textarea placeholder={placeholderText} rows="4" cols="50" type='text' id='prompt' name='prompt' onChange={handleDescriptionChange} className="prompt__text" />
+          <textarea placeholder={placeholderText} type='text' id='prompt' name='prompt' onChange={handleDescriptionChange} className="prompt__text" />
           <button className="prompt__button" onClick={!isFrozen && fetchDalle}>Think</button>
         </div>
       </section>
