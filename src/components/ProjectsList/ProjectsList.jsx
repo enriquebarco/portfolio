@@ -1,12 +1,12 @@
 import React from 'react';
-import data from "../../data/projects";
+import { projects } from "../../data/projects";
 import Project from "../Project/Project";
 import "./ProjectsList.scss";
 
 export default function ProjectsList() {
   return (
     <section className="project-list">
-        {data.map(project => {
+        {projects.map(project => {
             return <Project 
                 key={project.id}
                 id={project.id}

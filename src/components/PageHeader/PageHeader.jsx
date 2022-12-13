@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import compLogo from "../../assets/icons/memoji.jpeg";
 import waveLogo from "../../assets/icons/memoji-wave.png";
 import Github from "../../assets/icons/github.png";
@@ -11,25 +11,14 @@ import "./PageHeader.scss";
 import { Link } from 'react-router-dom';
 
 
-export class PageHeader extends Component {
-  state = {
-    isOpen: false,
-  }
+function PageHeader({ setIsDalle}) {
+  const [isOpen, setIsOpen] = useState(false);
 
-  handleClick = () => {
-    const change = !this.state.isOpen;
-    this.setState({ isOpen: change })
-
-    const grab = document.getElementsByClassName("header__button-area")
-
-}
-
-  render() {
     return (
       <header className="header">
         <div className="header__container">
-          {this.state.isOpen ? 
-            <Link to="/">
+          {isOpen ? 
+            <Link to="/dalle">
               <img className="header__logo animate__animated animate__fadeIn" src={waveLogo} alt="enrique barco memoji computer" /> 
             </Link>
             : 
@@ -38,23 +27,23 @@ export class PageHeader extends Component {
             </Link>}
           <div className={"header__button-area"}>
             <label className="header__button-label" htmlFor="check" >
-              <input className="header__input" type="checkbox" id="check"  onClick={this.handleClick}/> 
+              <input className="header__input" type="checkbox" id="check"  onClick={() => setIsOpen(!isOpen)}/> 
               <span className='header__button-bar header__button-bar--1'></span>
               <span className='header__button-bar header__button-bar--2'></span>
               <span className='header__button-bar header__button-bar--3'></span>
             </label>
           </div>
         </div>
-        {this.state.isOpen ? 
+        {isOpen ? 
         <div className="header__hidden-CTA animate__animated animate__fadeIn">
           <div className="header__hidden-container">
-            <a target="_blank" href="https://github.com/enriquebarco" className="header__media-links">
+            <a rel="noreferrer" target="_blank" href="https://github.com/enriquebarco" className="header__media-links">
               <img src={Github} alt="github icon" className="header__media-icons" />
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/enriquebarco/" className="header__media-links">
+            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/enriquebarco/" className="header__media-links">
               <img src={Linkedin} alt="linkedin icon" className="header__media-icons" />
             </a>
-            <a target="_blank" href="https://www.instagram.com/kikebarco/" className="header__media-links">
+            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/kikebarco/" className="header__media-links">
               <img src={Instagram} alt="instagram icon" className="header__media-icons" />
             </a>
           </div>
@@ -64,5 +53,6 @@ export class PageHeader extends Component {
         </div> : ""}
     </header>
     )
-  }
 }
+
+export default PageHeader;

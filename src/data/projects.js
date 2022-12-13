@@ -29,7 +29,7 @@ import pythonLogo from "../assets/icons/python.png";
 import seleniumLogo from "../assets/icons/selenium.png";
 import chromeLogo from "../assets/icons/chrome-logo.png";
 
-export default [
+export const projects = [
     {
         "id": uniqid(),
         "name": "Unbound",
