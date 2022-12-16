@@ -27,7 +27,7 @@ function CollaborationPrompt() {
         prompt: `${description} digital art`,
         n: 1,
         size: "512x512",
-      })
+      }).catch(err => alert(err))
       setDalle(response.data.data[0].url);
       setIsFrozen(false);
     }
