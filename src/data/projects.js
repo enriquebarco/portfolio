@@ -31,15 +31,17 @@ import seleniumLogo from "../assets/icons/selenium.png";
 import chromeLogo from "../assets/icons/chrome-logo.png";
 import matieralUILogo from "../assets/icons/material-ui.png";
 import firebaseLogo from "../assets/icons/firebase.png";
+import openaiLogo from "../assets/icons/openai.png";
 
 export const projects = [
   {
     id: uniqid(),
     name: "SwiftCover",
     description:
-      "SwiftCover is an AI tool used to craft tailored cover letters that fit any job description within seconds.Its a simple as pasting your existing cover letter and inputting job / company information. SwiftCover does the rest",
+      "SwiftCover is an AI tool used to craft tailored cover letters that fit any job description within seconds. Just paste your existing letter and provide job/company details. SwiftCover does the rest",
     image: swiftcover,
-    stack: [Javascript, ReactLogo, matieralUILogo, firebaseLogo],
+    link: "https://swiftcover.ai/",
+    stack: [Javascript, ReactLogo, matieralUILogo, firebaseLogo, openaiLogo],
   },
   {
     id: uniqid(),
