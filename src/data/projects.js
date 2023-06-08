@@ -1,4 +1,5 @@
 import uniqid from "uniqid";
+import swiftcover from "../assets/images/swiftcover.png";
 import unbound from "../assets/images/unbound.png";
 import kuzuia from "../assets/images/kuzuia.png";
 import tennisHack from "../assets/images/tennis-hack.png";
@@ -28,107 +29,91 @@ import coinbaseLogo from "../assets/icons/coinbase.png";
 import pythonLogo from "../assets/icons/python.png";
 import seleniumLogo from "../assets/icons/selenium.png";
 import chromeLogo from "../assets/icons/chrome-logo.png";
+import matieralUILogo from "../assets/icons/material-ui.png";
+import firebaseLogo from "../assets/icons/firebase.png";
 
 export const projects = [
-    {
-        "id": uniqid(),
-        "name": "Unbound",
-        "description": "Tech-enabled, self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
-        "image": unbound,
-        "link": "https://github.com/enriquebarco/unbound",
-        "stack": [
-            Javascript,
-            ReactLogo,
-            SassLogo,
-            AxiosLogo,
-            ExpressLogo,
-            NodeLogo,
-            MySQLLogo,
-            KnexLogo,
-            StripeLogo,
-            GoogleMapsLogo,
-            DigitalOceanLogo,
-        ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Kuzuia",
-        "description": "Real-time cryptocurrency tracker that is capable of displaying live data for over 170 currency pairs. Kuzuia allows users to gather consolidated market information in order to make trading decisions",
-        "image": kuzuia,
-        "link": "https://kuzuia.netlify.app/",
-        "stack": [
-            Javascript,
-            ReactLogo,
-            SassLogo,
-            coinbaseLogo,
-            netlifyLogo,
-        ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Tennis-Hack",
-        "description": "A python script that automatically reserves my tennis courts for the peak play times. This automates the annoying process of reserving courts early in the morning before they all get booked! Built using python, selenium, headless chrome / chrome driver, and an automated scheduler",
-        "image": tennisHack,
-        "link": "https://github.com/enriquebarco/tennishack",
-        "stack": [
-            pythonLogo,
-            seleniumLogo,
-            chromeLogo,
-            herokuLogo,
-        ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Kabila Group",
-        "description": "Kabila is a multi-day kitesurfing experience platform. We have listings in more than 20 countries which include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris and much more!",
-        "image": kabila,
-        "link": "https://www.kabilagroup.com/",
-        "stack": [
-            BubbleLogo,
-            StripeLogo,
-            FacebookLogo,
-        ]
-    },
-    {
-    "id": uniqid(),
-    "name": "Walt Jr.",
-    "description": "Walt Jr. is a budgeting application that allows users to manage their expenses",
-    "image": waltjr,
-    "link": "https://walt-jr-336l2.ondigitalocean.app/",
-    "stack": [
-        Javascript,
-        TypeScript,
-        ReactLogo,
-        SassLogo,
-        DigitalOceanLogo,
-    ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Cloud 9",
-        "description": "A fun little weather app where you can find weather information based on zip code",
-        "image": cloud9,
-        "link": "https://cloud-9-app.herokuapp.com/",
-        "stack": [
-            Javascript,
-            TypeScript,
-            ReactLogo,
-            SassLogo,
-            AxiosLogo,
-            herokuLogo
-        ]
-    },
-    {
-        "id": uniqid(),
-        "name": "Snake",
-        "description": "Bringing back the classic snake game for people that have way too much time on their hands",
-        "image": snake,
-        "link": "https://snake-me.herokuapp.com/",
-        "stack": [
-            Javascript,
-            cssLogo,
-            htmlLogo,
-            herokuLogo
-        ]
-    }
-]
+  {
+    id: uniqid(),
+    name: "SwiftCover",
+    description:
+      "SwiftCover is an AI tool used to craft tailored cover letters that fit any job description within seconds.Its a simple as pasting your existing cover letter and inputting job / company information. SwiftCover does the rest",
+    image: swiftcover,
+    stack: [Javascript, ReactLogo, matieralUILogo, firebaseLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Unbound",
+    description:
+      "Tech-enabled, self-serve platform that helps entrepreneurs hire and manage top talent across borders through automated compliance and payroll management",
+    image: unbound,
+    link: "https://github.com/enriquebarco/unbound",
+    stack: [
+      Javascript,
+      ReactLogo,
+      SassLogo,
+      AxiosLogo,
+      ExpressLogo,
+      NodeLogo,
+      MySQLLogo,
+      KnexLogo,
+      StripeLogo,
+      GoogleMapsLogo,
+      DigitalOceanLogo,
+    ],
+  },
+  {
+    id: uniqid(),
+    name: "Kuzuia",
+    description:
+      "Real-time cryptocurrency tracker that is capable of displaying live data for over 170 currency pairs. Kuzuia allows users to gather consolidated market information in order to make trading decisions",
+    image: kuzuia,
+    link: "https://kuzuia.netlify.app/",
+    stack: [Javascript, ReactLogo, SassLogo, coinbaseLogo, netlifyLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Tennis-Hack",
+    description:
+      "A python script that automatically reserves my tennis courts for the peak play times. This automates the annoying process of reserving courts early in the morning before they all get booked! Built using python, selenium, headless chrome / chrome driver, and an automated scheduler",
+    image: tennisHack,
+    link: "https://github.com/enriquebarco/tennishack",
+    stack: [pythonLogo, seleniumLogo, chromeLogo, herokuLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Kabila Group",
+    description:
+      "Kabila is a multi-day kitesurfing experience platform. We have listings in more than 20 countries which include luxury kite & stays, kite cruises, kite camps / lessons, downwinders, safaris and much more!",
+    image: kabila,
+    link: "https://www.kabilagroup.com/",
+    stack: [BubbleLogo, StripeLogo, FacebookLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Walt Jr.",
+    description:
+      "Walt Jr. is a budgeting application that allows users to manage their expenses",
+    image: waltjr,
+    link: "https://walt-jr-336l2.ondigitalocean.app/",
+    stack: [Javascript, TypeScript, ReactLogo, SassLogo, DigitalOceanLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Cloud 9",
+    description:
+      "A fun little weather app where you can find weather information based on zip code",
+    image: cloud9,
+    link: "https://cloud-9-app.herokuapp.com/",
+    stack: [Javascript, TypeScript, ReactLogo, SassLogo, AxiosLogo, herokuLogo],
+  },
+  {
+    id: uniqid(),
+    name: "Snake",
+    description:
+      "Bringing back the classic snake game for people that have way too much time on their hands",
+    image: snake,
+    link: "https://snake-me.herokuapp.com/",
+    stack: [Javascript, cssLogo, htmlLogo, herokuLogo],
+  },
+];
