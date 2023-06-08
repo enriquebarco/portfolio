@@ -41,7 +41,14 @@ export const projects = [
       "SwiftCover is an AI tool used to craft tailored cover letters that fit any job description within seconds. Just paste your existing letter and provide job/company details. SwiftCover does the rest",
     image: swiftcover,
     link: "https://swiftcover.ai/",
-    stack: [Javascript, ReactLogo, matieralUILogo, firebaseLogo, openaiLogo],
+    stack: [
+      Javascript,
+      ReactLogo,
+      matieralUILogo,
+      firebaseLogo,
+      openaiLogo,
+      StripeLogo,
+    ],
   },
   {
     id: uniqid(),
